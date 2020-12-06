@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block title%}
+  About
+{% endblock %}
+{% block content %}    
+      <!-- SITE BLOG STARTS HERE -->
+      <div class="row">
+        <div class="col-md-8 col-sm-8">
+           <div class="row">
+           	<div class="blog-content">
+           	  <div class="col-md-4 col-sm-6">
+                <img src="{% static 'images/mark.jpg' %}" class="img-circle img-responsive">
+                <div class="section-content">
+                  <h2>Mark Zuckerbarg</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione, distinctio eius dolores facilis maiores minus itaque excepturi soluta quae assumenda iste nostrum neque culpa ad eveniet nihil debitis incidunt!
+                  </p>
+                  <a href="about-detail.html" class="btn btn-success">Readmore</a>
+                </div>
+              </div>
+              <!-- END OF MARK COL -->
+              <div class="col-md-4 col-sm-6">
+                <img src="{% static 'images/paul.jpg' %}" class="img-circle img-responsive">
+                <div class="section-content">
+                  <h2>Paul Allen </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione, distinctio eius dolores facilis maiores minus itaque excepturi soluta quae assumenda iste nostrum neque culpa ad eveniet nihil debitis incidunt!
+                  </p>
+                  <a href="about-detail.html" class="btn btn-success">Readmore</a>
+                </div>
+              </div>
+              <!-- END OF MARK COL --> 
+              <div class="col-md-4 col-sm-6">
+                <img src="{% static 'images/mayer.jpg' %}" class="img-circle img-responsive">
+                <div class="section-content">
+                  <h2>Marrisa Mayer </h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione, distinctio eius dolores facilis maiores minus itaque excepturi soluta quae assumenda iste nostrum neque culpa ad eveniet nihil debitis incidunt!
+                  </p>
+                  <a href="about-detail.html" class="btn btn-success">Readmore</a>
+                </div>
+              </div>
+              <!-- END OF MAYER COL -->
+              
+           	</div>
+            <!-- END BLOG CONTENT -->
+           </div>
+         
+        
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="widget">
+            <h3>Categories</h3>
+            <ul class="nav">
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">User</a></li>
+            </ul>
+          </div>
+           <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+               <form class="form-inline">
+               <input class="form-control mr-sm-8" type="text" placeholder="Search">
+               <button class="btn btn-success" type="submit">Search</button>
+           </form>
+          </nav>
+          <div class="widget">
+            <h3>Email Subscribtion</h3>
+            <form class="form">
+              <div class="form-group">
+                <input type="text" name="email" class="form-control" placeholder="Enter Email">
+              </div>
+              <input type="submit" name="submit" class="btn btn-default btn-block">
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- SITE BLOG ENDS HERE -->
+    </div>
+    <!-- END OF MAIN CONTENT -->
+{% endblock %}    
